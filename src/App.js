@@ -19,5 +19,5 @@ export default function App() {
 /*
 1. whenever compoent render useeffect callback run everytime
 decide when you want to call useeffect to prevent infinite loop
-2.
+2. useeffect run every single time when you compoent render and rerender.
 */
