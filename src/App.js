@@ -4,10 +4,16 @@ import './style.css';
 export default function App() {
   const [count, setCount] = useState(0);
   const [datrMode, setDardMode] = useState(false);
+  // this useEffect for seting title
   useEffect(() => {
-    console.log('use-effect run');
+    console.log('count  use-effect run');
     document.title = count;
   }, [count]);
+  // this useEffect is used to store darkmode in localstore
+  // we can use multiple useeffect for diffenret buisness logic
+  useEffect(() => {
+    console.log('dark mode useeffect run');
+  }, [datrMode]);
   console.log('compoent-render');
   return (
     <div>
