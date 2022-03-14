@@ -13,7 +13,15 @@ export default function App() {
   // we can use multiple useeffect for diffenret buisness logic
   useEffect(() => {
     console.log('dark mode useeffect run');
+    localStorage.setItem('dardmode', datrMode);
   }, [datrMode]);
+
+  useEffect(() => {
+    console.log(
+      'it only run once a time when compoent render compoentDidMount compoent render first time'
+    );
+  }, []);
+
   console.log('compoent-render');
   return (
     <div>
@@ -40,4 +48,8 @@ logic change
 /*
 there is miner issue with this method
 let's we introduce a new state dardmode
+*/
+
+/*
+compoentDidMount
 */
