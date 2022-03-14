@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div>
       <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <p>{datrMode ? 'dark' : 'white'}</p>
       <button onClick={() => setCount((state) => state + 1)}>{count}</button>
       <button onClick={() => setDardMode((state) => !state)}>
         {'toggle DarkMode'}
