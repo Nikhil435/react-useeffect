@@ -7,7 +7,7 @@ export default function App() {
   useEffect(() => {
     console.log('use-effect run');
     document.title = count;
-  }, []);
+  }, [count]);
   console.log('compoent-render');
   return (
     <div>
